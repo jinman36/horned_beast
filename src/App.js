@@ -1,11 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header.js';
+import Main from './Main.js';
+import Footer from './Footer.js';
 
 function App() {
   return (
     <>
-    <h1>Horned Beast Exercise</h1>
-    </>
+    <Header/>
+    <Main/>
+    <Footer/>
+  </>
   );
 }
 
