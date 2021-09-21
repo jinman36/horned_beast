@@ -6,7 +6,7 @@ class HornedBeast extends React.Component {
     return (
       <>
       <h2>Animal Title</h2>
-      <img src="/" alt="/">Title</img>
+      <img src="/" alt="">Title</img>
       <p>Describes the animal here</p>
       </>
     )
