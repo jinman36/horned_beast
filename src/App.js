@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <>
-    <h1>This is the App page</h1>
+    <h1>Horned Beast Exercise</h1>
     </>
   );
 }
