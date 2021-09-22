@@ -15,19 +15,21 @@ Number and name of feature: Feature #2: Allow users to vote for their favorite b
 
 Estimate of time needed to complete: 30 min
 
-Start time: _____
+Start time: 9:15
 
-Finish time: _____
+Finish time: 9:20
 
-Actual time needed to complete: _____
+Actual time needed to complete: 5 min - guided by class demo
 
 
 Feature 3: Bootstrap
 
 Estimate of time needed to complete: 15 min to proof of life
 
-Start time: _____
+Start time: 9:15
 
-Finish time: _____
+Finish time: 9:30
 
-Actual time needed to complete: _____
+Actual time needed to complete: 15 min
+
+total time: 1 hr to reach MVP with Class demo - for stretch goal I want to add dark mode and change the layout to a carousel for voting with bootstrap
