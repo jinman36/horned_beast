@@ -6,9 +6,9 @@ Estimate of time needed to complete: 30 min
 
 Start time: 8:50
 
-Finish time: _____
+Finish time: 9:15
 
-Actual time needed to complete: _____
+Actual time needed to complete: 25 min
 
 
 Number and name of feature: Feature #2: Allow users to vote for their favorite beast
