@@ -1,4 +1,6 @@
 import React from "react";
+import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
 
 
 class HornedBeast extends React.Component {
@@ -32,17 +34,19 @@ class HornedBeast extends React.Component {
 
   render() {
     return (
-      <>
-      <img onClick={this.setFav} src={this.props.image_url} alt="a box" title="placeholder" />
-      <h2>{this.props.title}</h2>
-      <p>{this.props.description}</p>
-      <p>{this.props.keyword}</p>
-      <p>{this.props.horns}</p>
-      <p>Amount in Inventory: {this.state.numberInv}</p>
+      <Card className="m-3" style={{ width: '20rem' }}>
+      <Card.Img variant="top" src={this.props.image_url} />
+      <Card.Body>
+      <Card.Title>{this.props.title}</Card.Title>
+      <Card.Text>Description: {this.props.description}</Card.Text>
+      <Card.Text>Keyword: {this.props.keyword}</Card.Text>
+      <Card.Text>Number of Horns: {this.props.horns}</Card.Text>
+      <p>Number of Likes: {this.state.numberInv}</p>
       {/* Ternary statement is an if/else statemetn rolled into one */}
       <p>{(this.state.isFav) ? '<3' : ''}</p>
-      <button onClick={this.onAdd}>Favorite</button>
-      </>
+      <Button variant="dark" onClick={this.onAdd}>Favorite</Button>
+  </Card.Body>
+</Card>
     )
 
   }
