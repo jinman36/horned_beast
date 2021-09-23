@@ -1,6 +1,7 @@
 import React from "react";
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
+import Rating from './Rating.js'
 
 
 class HornedBeast extends React.Component {
@@ -41,6 +42,7 @@ class HornedBeast extends React.Component {
       <Card.Text>Description: {this.props.description}</Card.Text>
       <Card.Text>Keyword: {this.props.keyword}</Card.Text>
       <Card.Text>Number of Horns: {this.props.horns}</Card.Text>
+      <Rating />
       <p>Number of Likes: {this.state.numberInv}</p>
       {/* Ternary statement is an if/else statemetn rolled into one */}
       <p>{(this.state.isFav) ? '<3' : ''}</p>
