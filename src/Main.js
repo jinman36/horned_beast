@@ -1,6 +1,7 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
 import data from "./data.json"
+import CardGroup from "react-bootstrap/CardGroup";
 
 class Main extends React.Component {
   render() {
@@ -14,7 +15,9 @@ class Main extends React.Component {
     })
     return (
       <>
+      <CardGroup>
       {hornedBeastArr}
+      </CardGroup>
       </>
     )
 
