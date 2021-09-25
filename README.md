@@ -41,6 +41,7 @@ Actual time needed to complete: 15 min
 
 total time: 1 hr to reach MVP with Class demo - for stretch goal I want to add dark mode and change the layout to a carousel for voting with bootstrap
 
+
 ## Lab 03
 
 Feature 1: Display a Modal with image
@@ -56,3 +57,6 @@ Actual time needed to complete: 3.5 hrs
 total time: 3.5 hrs
 
 - Modal was displayed quickly - being able to pass that through an additional component and render an image was slightly more difficult.
+
+- [Star rating tutorial](https://www.youtube.com/watch?v=eDw46GYAIDQ)
+

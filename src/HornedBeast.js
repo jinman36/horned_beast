@@ -1,6 +1,7 @@
 import React from "react";
-import Button from 'react-bootstrap/Button'
+// import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
+import Rating from './Rating.js'
 
 class HornedBeast extends React.Component {
   //have to add for state
@@ -23,6 +24,7 @@ class HornedBeast extends React.Component {
 
   render() {
     return (
+
       <div>
         <Card className="m-3" bg='secondary' style={{ width: '25rem' }} border='dark'>
           <Card.Img onClick={() => this.props.toggleModal(this.props.beast)} style={{ height: '20rem' }} variant="top" src={this.props.image_url} />
@@ -42,5 +44,6 @@ class HornedBeast extends React.Component {
     )
   };
 };
+
 
 export default HornedBeast;
