@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -37,16 +38,9 @@
   }
 }
 
-input[type="radio"] {
-  display: none;
+
+h1 {
+  font-family: 'Shojumaru', cursive;
+  margin: auto;
 }
 
-.star {
-  cursor: pointer;
-  transition: color 200ms;
-}
-
-#card {
-  display: inline;
-
-}

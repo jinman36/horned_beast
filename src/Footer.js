@@ -4,10 +4,9 @@ class Footer extends React.Component {
   render() {
     return (
       <>
-      <h3>Jeff Inman</h3>
+        <h3 className='p-3 mb-2 bg-secondary'>&copy; Jeff Inman with Instructional Help!</h3>
       </>
     )
-
   }
 }
 
