@@ -43,14 +43,16 @@ total time: 1 hr to reach MVP with Class demo - for stretch goal I want to add d
 
 ## Lab 03
 
-Feature 1: Display a Modal
+Feature 1: Display a Modal with image
 
 Estimate of time needed to complete: 1 hour, with class video assistance
 
 Start time: 1:39pm
 
-Finish time:
+Finish time: 4:15pm
 
-Actual time needed to complete:
+Actual time needed to complete: 3.5 hrs
 
-total time:
+total time: 3.5 hrs
+
+- Modal was displayed quickly - being able to pass that through an additional component and render an image was slightly more difficult.
