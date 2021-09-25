@@ -1,7 +1,7 @@
 import React from "react";
-// import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
-import Rating from './Rating.js'
+
 
 class HornedBeast extends React.Component {
   //have to add for state
