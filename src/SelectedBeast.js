@@ -13,7 +13,7 @@ class SelectedBeat extends React.Component {
       <>
         <Modal style={{ width: '1500px' }} show={this.props.showModal} onHide={this.toggleModal}>
           <Modal.Header>
-            <Modal.Title>{this.props.currentBeast.title} rounded</Modal.Title>
+            <Modal.Title>{this.props.currentBeast.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <img alt='current beast' style={{ width: '30rem' }} src={this.props.currentBeast.image_url} />
