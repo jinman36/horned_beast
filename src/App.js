@@ -1,4 +1,6 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Form from 'react-bootstrap/Form'
 import './App.css';
 import Header from './Header.js';
 import Main from './Main.js';
@@ -24,14 +26,30 @@ class App extends React.Component {
     this.setState({ currentBeast: beast })
     this.toggleModal();
   }
+
+  filterHorn = (event) => {
+    console.log(`Number of Horn: ${event.target.value}`)
+  }
+
+
   render() {
     return (
       <>
         <Container>
           <Header />
+          <Form.Group controlId={this.state.data}>
+            <Form.Label>Select By # of Horns</Form.Label>
+            <Form.Control as="select" onChange={this.filterHorn}>
+              <option value= '1' >1</option>
+              <option value= '2' >2</option>
+              <option value= '3' >3</option>
+              <option value= '4'>4</option>
+            </Form.Control>
+          </Form.Group>
           <Main
             data={this.state.data}
             toggleModal={this.renderBeast} />
+
           <Footer />
         </Container>
         <SelectedBeast showModal={this.state.showModal}
