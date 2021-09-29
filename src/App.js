@@ -28,7 +28,14 @@ class App extends React.Component {
   }
 
   filterHorn = (event) => {
-    console.log(`Number of Horn: ${event.target.value}`)
+    let hornNumber = `${event.target.value}`
+    console.log(hornNumber)
+    // return this.data.state.filter((horns) => {
+      if (hornNumber === '3') {
+        console.log(`Number of Horn: ${hornNumber}`)
+    }
+    // return horns
+    // }
   }
 
 
@@ -38,8 +45,9 @@ class App extends React.Component {
         <Container>
           <Header />
           <Form.Group controlId={this.state.data}>
-            <Form.Label>Select By # of Horns</Form.Label>
+
             <Form.Control as="select" onChange={this.filterHorn}>
+              <option value= '' >Select By # of Horns</option>
               <option value= '1' >1</option>
               <option value= '2' >2</option>
               <option value= '3' >3</option>
