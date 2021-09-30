@@ -7,6 +7,7 @@
   - **Lab 01:** Vote on your favorite animal - Focus is component structure
   - **Lab 02:** Integrate JSON data to provide title, image, and description of each animal in the application
   - **Lab 03:** Add a feature that allows the user to click on an image and display the image as a modal - Refactor code to pull json data from the top parent element and pass it down to the lowest child element
+  - **Lab 04:** Filter by Number of Horns using a bootstrap form and dropdown menu. 
 
 ## Lab 02
 
