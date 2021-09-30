@@ -16,7 +16,8 @@ class App extends React.Component {
     this.state = {
       data: dataJson,
       showModal: false,
-      currentBeast: {}
+      currentBeast: {},
+      numberOfHorns: {}
     }
   }
   toggleModal = () => {
@@ -28,44 +29,46 @@ class App extends React.Component {
   }
 
   filterHorn = (event) => {
-    let hornNumber = `${event.target.value}`
-    console.log(hornNumber)
-    // return this.data.state.filter((horns) => {
-      if (hornNumber === '3') {
-        console.log(`Number of Horn: ${hornNumber}`)
-    }
-    // return horns
-    // }
+    const horns = parseInt(event.target.value)
+    console.log(horns)
+    let filteredByHorns = dataJson.filter((beasts) => beasts.horns === horns);
+    console.log(filteredByHorns)
+    return this.setState({ numberOfHorns: filteredByHorns})
   }
-
 
   render() {
-    return (
-      <>
-        <Container>
-          <Header />
-          <Form.Group controlId={this.state.data}>
+ 
+  
+  // console.log(`${data.horns}`);
+  return (
+    <>
+      <Container>
 
-            <Form.Control as="select" onChange={this.filterHorn}>
-              <option value= '' >Select By # of Horns</option>
-              <option value= '1' >1</option>
-              <option value= '2' >2</option>
-              <option value= '3' >3</option>
-              <option value= '4'>4</option>
-            </Form.Control>
-          </Form.Group>
-          <Main
-            data={this.state.data}
-            toggleModal={this.renderBeast} />
+        <Header />
+        <Form.Group controlId="Name">
 
-          <Footer />
-        </Container>
-        <SelectedBeast showModal={this.state.showModal}
-          toggleModal={this.toggleModal}
-          currentBeast={this.state.currentBeast} />
-      </>
-    );
-  }
+          <Form.Control as="select" onChange={this.filterHorn}>
+            <option value='' >Select By # of Horns</option>
+            <option value='1' >1</option>
+            <option value='2' >2</option>
+            <option value='3' >3</option>
+            <option value='4'>4</option>
+          </Form.Control>
+        </Form.Group>
+
+        <Main
+          data={this.state.data}
+          toggleModal={this.renderBeast} />
+
+        <Footer />
+
+      </Container>
+      <SelectedBeast showModal={this.state.showModal}
+        toggleModal={this.toggleModal}
+        currentBeast={this.state.currentBeast} />
+    </>
+  );
+}
 }
 
 export default App;
