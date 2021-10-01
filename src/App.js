@@ -17,12 +17,13 @@ class App extends React.Component {
       data: dataJson,
       showModal: false,
       currentBeast: {},
-      // numberOfHorns: {}
     }
   }
+
   toggleModal = () => {
     this.setState({ showModal: !this.state.showModal })
   }
+
   renderBeast = (beast) => {
     this.setState({ currentBeast: beast })
     this.toggleModal();
@@ -30,25 +31,20 @@ class App extends React.Component {
 
   filterHorn = (event) => {
     const horns = parseInt(event.target.value)
-    console.log(horns)
     let filteredByHorns = dataJson.filter((beastObject) => beastObject.horns === horns);
-    console.log(filteredByHorns)
     this.setState({ data: filteredByHorns})
   }
 
   render() {
  
-  
-
   return (
     <>
       <Container>
-
         <Header
         />
         <Form.Group controlId="Name">
           <Form.Control as="select" onChange={this.filterHorn}>
-            <option value='' >Select By # of Horns</option>
+            <option value='all' >Select By # of Horns</option>
             <option value='1' >1</option>
             <option value='2' >2</option>
             <option value='3' >3</option>
@@ -57,13 +53,14 @@ class App extends React.Component {
         </Form.Group>
 
         <Main
-          // filterHorn={this.state.filterHorn} 
           data={this.state.data}
           toggleModal={this.renderBeast}
           />
+
         <SelectedBeast showModal={this.state.showModal}
           toggleModal={this.toggleModal}
           currentBeast={this.state.currentBeast} />
+          
         <Footer />
 
       </Container>
